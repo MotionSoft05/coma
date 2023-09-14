@@ -120,6 +120,7 @@ const Home = () => {
           <form action="procesar-suscripcion.php" method="post">
             <label for="email">Correo Electrónico:</label>
             <input
+              class="emails"
               type="email"
               id="email"
               name="email"
