@@ -1,6 +1,6 @@
 import React from "react";
 import "./contacto.css"; // Asegúrate de especificar la ruta correcta al archivo CSS
-import leo from "../../media/leo.jpg";
+import leo from "../../media/trabajos.jpg";
 
 const Contacto = () => {
   return (
@@ -45,7 +45,7 @@ const Contacto = () => {
                 rows="4"
                 required
               ></textarea>
-              <div style={{ display: "flex", justifyContent: "center" }}>
+              <div style={{ textAlign: "center" }}>
                 <input
                   className="contact-submit"
                   type="submit"
