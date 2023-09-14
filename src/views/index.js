@@ -1,3 +1,4 @@
+import Contacto from "./contanto/contacto";
 import Home from "./home/home";
 
-export { Home };
+export { Home, Contacto };

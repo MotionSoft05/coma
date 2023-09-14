@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-section {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto; /* Esto centra el formulario */
+}
+
+.contact-section h2 {
+  color: #333;
+  text-align: center;
+}
+
+.contact-label {
+  display: block;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.contact-input,
+.contact-textarea {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-textarea {
+  resize: vertical;
+}
+
+.contact-submit {
+  background-color: #eb3349;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-submit:hover {
+  background-color: #f45c43;
+}

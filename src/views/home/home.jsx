@@ -107,7 +107,29 @@ const Home = () => {
           </div>
         </div>
       </div>
-
+      <section id="suscripcion">
+        <div class="izquierda">
+          <h2>Suscríbete a Nuestras Novedades</h2>
+          <h3>
+            Mantente al tanto de las últimas ofertas, actualizaciones de
+            productos, consejos de construcción y noticias emocionantes
+            relacionadas con CoMA.
+          </h3>
+        </div>
+        <div class="derecha">
+          <form action="procesar-suscripcion.php" method="post">
+            <label for="email">Correo Electrónico:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Tu correo electrónico"
+              required
+            />
+            <button type="submit">Suscribirse</button>
+          </form>
+        </div>
+      </section>
       {/* <!-- Sección de Por qué seleccionar CoMA --> */}
       <div class="ventajas-general">
         <h1>¿Por qué seleccionar CoMA?</h1>
@@ -141,30 +163,6 @@ const Home = () => {
           </div>
         </section>
       </div>
-
-      <section id="suscripcion">
-        <div class="izquierda">
-          <h2>Suscríbete a Nuestras Novedades</h2>
-          <h3>
-            Mantente al tanto de las últimas ofertas, actualizaciones de
-            productos, consejos de construcción y noticias emocionantes
-            relacionadas con CoMA.
-          </h3>
-        </div>
-        <div class="derecha">
-          <form action="procesar-suscripcion.php" method="post">
-            <label for="email">Correo Electrónico:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Tu correo electrónico"
-              required
-            />
-            <button type="submit">Suscribirse</button>
-          </form>
-        </div>
-      </section>
     </body>
   );
 };
