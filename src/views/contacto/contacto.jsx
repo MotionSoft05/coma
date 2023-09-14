@@ -45,8 +45,13 @@ const Contacto = () => {
                 rows="4"
                 required
               ></textarea>
-
-              <input className="contact-submit" type="submit" value="Enviar" />
+              <div style={{ display: "flex", justifyContent: "center" }}>
+                <input
+                  className="contact-submit"
+                  type="submit"
+                  value="Enviar"
+                />
+              </div>
             </form>
           </div>
         </div>
