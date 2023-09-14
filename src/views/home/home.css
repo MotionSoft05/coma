@@ -77,3 +77,91 @@ header p {
 }
 
 /* Otros estilos (añade más según tus necesidades) */
+/* Estilos del slider */
+div#slider {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  background: linear-gradient(to bottom, #f45c43, #eb3349);
+}
+
+@keyframes slideAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+    transform-origin: center;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    transform-origin: center;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+  }
+}
+
+div#slider .slide {
+  flex: 1;
+  width: 100%;
+  text-align: center;
+  display: none;
+  animation: slideAnimation 2s ease-in-out;
+  animation-delay: 2s;
+}
+
+div#slider header {
+  color: #fff;
+  padding: 100px 0;
+  margin-left: 80px;
+}
+
+div#slider h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: left;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+div#slider p {
+  font-size: 18px;
+  text-align: left;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+div#slider .btn-primario {
+  display: table;
+  padding: 10px 20px;
+  background: linear-gradient(to bottom, #f45c43, #eb3349);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+div#slider .btn-primario:hover {
+  background: linear-gradient(to bottom, #eb3349, #f45c43);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+div.slide .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.slide .text {
+  flex: 1;
+  padding: 20px;
+}
+
+div.slide .image {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
