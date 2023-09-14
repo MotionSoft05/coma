@@ -57,6 +57,12 @@
   max-width: 280px;
 }
 
+.footer-distributed .footer-right img {
+  @media screen and (max-width: 768px) {
+    width: 2rem;
+  }
+}
+
 .footer-distributed .footer-right a {
   display: inline-block;
 

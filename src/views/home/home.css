@@ -41,6 +41,11 @@ header p {
   border-radius: 5px;
   font-weight: bold;
   margin-top: 20px;
+  @media screen and (max-width: 768px) {
+    margin-top: 0.5rem;
+    font-size: 0.5rem;
+    padding: 0.2rem 0.7rem;
+  }
 }
 
 .btn-primario:hover {
@@ -53,7 +58,7 @@ div#slider {
   overflow: hidden;
   width: 100%;
   display: flex;
-  justify-content: center; /* Centrar horizontalmente */
+  justify-content: space-between; /* Centrar horizontalmente */
   align-items: center; /* Centrar verticalmente */
   background: linear-gradient(to bottom, #f45c43, #eb3349);
 }
@@ -90,6 +95,7 @@ div#slider header {
   margin-left: 80px;
   @media screen and (max-width: 768px) {
     padding: 0rem;
+    margin-left: 1rem;
   }
 }
 
@@ -149,6 +155,12 @@ div.slide .image {
   text-align: center;
   @media screen and (max-width: 768px) {
     padding: 0rem;
+    width: 1px; /* Establecer el ancho deseado */
+    height: auto; /* Mantener la proporción de aspecto original */
+  }
+}
+div.slide .image img {
+  @media screen and (max-width: 768px) {
     width: 200px; /* Establecer el ancho deseado */
     height: auto; /* Mantener la proporción de aspecto original */
   }
@@ -158,6 +170,9 @@ div.slide .image {
 
 .ventajas-general {
   margin-top: 50px;
+  @media screen and (max-width: 768px) {
+    margin-top: 2rem;
+  }
 }
 
 .ventajas-general h1 {
@@ -182,7 +197,6 @@ div.slide .image {
 
 #ventajas {
   background-color: #fff;
-  padding: 0px 0;
   text-align: center;
   display: flex;
 }
@@ -209,6 +223,7 @@ div.slide .image {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   @media screen and (max-width: 768px) {
     font-size: 1rem;
+    margin-bottom: 0rem;
   }
 }
 
@@ -223,7 +238,11 @@ div.slide .image {
 
 .ventaja img {
   width: 70%;
-    height: 70%;
+  height: 70%;
+  @media screen and (max-width: 768px) {
+    width: 50%;
+    height: auto;
+  }
 }
 
 /* Estilos para la sección de suscripción */
@@ -238,7 +257,7 @@ div.slide .image {
   background-repeat: no-repeat;
   background-position: center;
   color: #fff; /* Cambia el color del texto para que sea legible en el fondo */
-  background-position: center calc(100% - -1000px);
+  background-position: center calc(100% - -400px);
   @media screen and (max-width: 768px) {
     background-position: center calc(100% - -0px);
   }
@@ -277,6 +296,9 @@ div.slide .image {
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 5px;
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
 }
 
 /* Estilos para el formulario */
@@ -290,6 +312,10 @@ label {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); /* Efecto de sombra */
   text-align: center;
   font-size: 18px;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    font-size: 0.8rem;
+  }
 }
 
 /* Estilos para el campo de correo electrónico */
@@ -299,6 +325,10 @@ label {
   margin-bottom: 10px;
   border: 1px solid #f45c43;
   border-radius: 3px;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    font-size: 0.7rem;
+  }
 }
 
 /* Estilos para el botón de suscripción */
@@ -311,9 +341,96 @@ button {
   border: none;
   border-radius: 3px;
   cursor: pointer;
+  @media screen and (max-width: 768px) {
+    font-size: 0.7rem;
+  }
 }
 
 /* Estilos para el botón al pasar el mouse */
 button:hover {
   background-color: #f45c43;
+}
+
+/* Estilos para la sección de Cómo Funciona CoMA */
+#como-funciona {
+  display: flex;
+  flex-direction: row-reverse; /* Reversa la dirección de los elementos para colocar la imagen a la izquierda */
+  justify-content: space-between; /* Distribuye el espacio horizontalmente */
+  align-items: center; /* Centra verticalmente los elementos */
+  padding: 40px; /* Espacio interno */
+}
+
+/* Estilos para el contenido de texto en el lado derecho */
+.contenido-texto {
+  flex: 1; /* Ocupa todo el espacio disponible */
+  padding-right: 36px; /* Espacio interno a la derecha */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.contenido-texto h2 {
+  font-size: 36px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+  color: #eb3349;
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
+}
+
+.contenido-texto p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #f45c43;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  @media screen and (max-width: 768px) {
+    font-size: 0.5rem;
+  }
+}
+
+/* Estilos para la imagen en el lado izquierdo */
+.imagen {
+  flex: 1; /* Ocupa todo el espacio disponible */
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.imagen img {
+  max-width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+  height: auto;
+}
+
+/* Estilos para la sección de Puntos Fuertes de la Aplicación */
+#puntos-fuertes {
+  display: flex; /* Habilita la disposición en línea de los elementos */
+  justify-content: space-between; /* Distribuye el espacio horizontalmente entre los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+  padding: 40px; /* Espacio interno */
+  @media screen and (max-width: 768px) {
+    padding: 10px; /* Espacio interno */
+  }
+}
+
+/* Estilos para cada punto fuerte */
+.punto-fuerte {
+  flex: 1; /* Distribuye el espacio horizontalmente entre los puntos fuertes */
+  text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.punto-fuerte img {
+  width: 80px; /* Ancho del icono */
+  height: 80px; /* Altura del icono */
+  @media screen and (max-width: 768px) {
+    width: 40px; /* Ancho del icono */
+    height: 40px; /* Altura del icono */
+  }
+}
+
+.punto-fuerte h3 {
+  font-size: 20px;
+  margin: 10px 0; /* Espacio en la parte superior e inferior del título */
+  color: #f45c43;
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
 }

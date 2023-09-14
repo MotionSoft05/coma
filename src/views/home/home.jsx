@@ -6,7 +6,11 @@ import slider3 from "../../media/slider3.png";
 import productos from "../../media/productos.png";
 import seguridad from "../../media/seguridad.png";
 import trabajo from "../../media/trabajo.png";
-
+import sobre from "../../media/sobre.jpg";
+import toolbox from "../../media/toolbox.svg";
+import thunder from "../../media/thunder.svg";
+import security from "../../media/security.svg";
+import imgennueva from "../../media/imgennueva.png";
 const Home = () => {
   const slides = useRef([]);
   let currentSlide = 0;
@@ -107,6 +111,49 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      {/* <!-- Sección de Cómo Funciona CoMA --> */}
+      <section id="como-funciona">
+        <div class="contenido-texto">
+          <h2>Cómo Funciona CoMA</h2>
+          <p>
+            CoMA es tu solución integral para el comercio de materiales de
+            construcción y oportunidades laborales en el sector. Nuestro
+            objetivo es simplificar tu vida y brindarte todo lo que necesitas en
+            un solo lugar.
+          </p>
+          <p>
+            <strong>Paso 1:</strong> Explora nuestra amplia variedad de
+            productos de construcción de alta calidad.
+          </p>
+          <p>
+            <strong>Paso 2:</strong> Realiza compras seguras y confiables con
+            opciones de pago y envío garantizadas.
+          </p>
+          <p>
+            <strong>Paso 3:</strong> Además de comprar, CoMA te conecta con
+            emocionantes oportunidades laborales en la construcción.
+          </p>
+          <section id="puntos-fuertes">
+            <div class="punto-fuerte">
+              <img src={thunder} alt="Ícono de Rapidez" />
+              <h3>Rapidez</h3>
+            </div>
+            <div class="punto-fuerte">
+              <img src={security} alt="Ícono de Seguridad" />
+              <h3>Seguridad</h3>
+            </div>
+            <div class="punto-fuerte">
+              <img src={toolbox} alt="Ícono de Variedad" />
+              <h3>Variedad</h3>
+            </div>
+          </section>
+        </div>
+        <div class="imagen">
+          <img src={imgennueva} alt="Imagen de cómo funciona CoMA" />
+        </div>
+      </section>
+
       <section id="suscripcion">
         <div class="izquierda">
           <h2>Suscríbete a Nuestras Novedades</h2>
