@@ -51,6 +51,13 @@ body {
 .login-link:hover {
   background-color: #f45c43;
 }
+.header-links:hover {
+  color: #f45c43; /* Color al hacer hover */
+}
+/* Aplicar color al hacer hover en los enlaces */
+.header-links a:hover {
+  color: #f45c43;
+}
 
 .logo {
   width: 200px;
