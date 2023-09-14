@@ -136,6 +136,10 @@ div.slide .image {
 
 /* Estilos de las secciones */
 
+.ventajas-general {
+  margin-top: 50px;
+}
+
 .ventajas-general h1 {
   color: #eb3349; /* Color rojo */
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); /* Efecto de sombra */
@@ -184,4 +188,87 @@ div.slide .image {
 .ventaja img {
   width: 70%;
     height: 70%;
+}
+
+/* Estilos para la sección de suscripción */
+#suscripcion {
+  display: flex;
+  justify-content: space-between; /* Coloca los elementos a ambos lados */
+  align-items: center;
+  padding: 20px;
+  background-image: url("../../media/fondo.jpg"); /* Ruta a tu imagen de fondo */
+  background-size: cover;
+  background-attachment: fixed; /* Fija la imagen de fondo */
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff; /* Cambia el color del texto para que sea legible en el fondo */
+  background-position: center calc(100% - -1000px);
+}
+
+/* Estilos para la parte izquierda */
+.izquierda {
+  flex: 1; /* Toma el 50% del espacio disponible */
+  padding: 20px;
+}
+
+/* Estilos para el título en la parte izquierda */
+.izquierda h2 {
+  font-size: 36px;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para el subtítulo en la parte izquierda */
+.izquierda h3 {
+  font-size: 18px;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para la parte derecha (formulario de suscripción) */
+.derecha {
+  flex: 1; /* Toma el 50% del espacio disponible */
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Estilos para el formulario */
+form {
+  text-align: left;
+}
+
+/* Estilos para el label del campo de correo electrónico */
+label {
+  color: #f45c43; /* Color naranja */
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); /* Efecto de sombra */
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Estilos para el campo de correo electrónico */
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #f45c43;
+  border-radius: 3px;
+}
+
+/* Estilos para el botón de suscripción */
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #eb3349;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Estilos para el botón al pasar el mouse */
+button:hover {
+  background-color: #f45c43;
 }
