@@ -121,6 +121,13 @@ body {
     margin-bottom: 5px;
   }
 
+  .contact-section {
+    background-image: url("../../media/trabajos.jpg"); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; /* Centra la imagen horizontal y verticalmente */
+  }
+
   .contact-submit {
     color: #000;
   }
