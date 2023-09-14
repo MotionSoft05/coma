@@ -3,6 +3,9 @@ import "./home.css";
 import slider1 from "../../media/slider1.png";
 import slider2 from "../../media/slider2.png";
 import slider3 from "../../media/slider3.png";
+import productos from "../../media/productos.png";
+import seguridad from "../../media/seguridad.png";
+import trabajo from "../../media/trabajo.png";
 
 const Home = () => {
   const slides = useRef([]);
@@ -105,35 +108,39 @@ const Home = () => {
         </div>
       </div>
 
-      {/* <!-- Sección de Ventajas Principales --> */}
-      <section id="ventajas">
-        {/* <!-- Beneficios Clave --> */}
-        <div class="ventaja">
-          <h2>Variedad de Productos</h2>
-          <p>
-            Descubre una amplia gama de productos de construcción de alta
-            calidad.
-          </p>
-          <img src="icono-productos.png" alt="Ícono de productos" />
-        </div>
-        <div class="ventaja">
-          <h2>Pago y Envío Seguros</h2>
-          <p>
-            Garantizamos transacciones seguras y opciones de envío confiables.
-          </p>
-          <img src="icono-seguridad.png" alt="Ícono de seguridad" />
-        </div>
-        <div class="ventaja">
-          <h2>Conexiones Profesionales</h2>
-          <p>
-            Conecta con oportunidades laborales en el sector de la construcción.
-          </p>
-          <img src="icono-construccion.png" alt="Ícono de construcción" />
-        </div>
-      </section>
+      {/* <!-- Sección de Por qué seleccionar CoMA --> */}
+      <div class="ventajas-general">
+        <h1>¿Por qué seleccionar CoMA?</h1>
+        <h3>Tu destino completo para construcción y oportunidades laborales</h3>
 
-      {/* <!-- Otras Secciones (Cómo Funciona, Testimonios, Registro, Preguntas Frecuentes, Contacto, Descarga de la Aplicación Móvil, Redes Sociales, Pie de Página) --> */}
-      <script src="slider.js"></script>
+        {/* <!-- Sección de Ventajas Principales --> */}
+        <section id="ventajas">
+          {/* <!-- Beneficios Clave --> */}
+          <div class="ventaja">
+            <img src={productos} alt="Ícono de productos" />
+            <h2>Variedad de Productos</h2>
+            <p>
+              Descubre una amplia gama de productos de construcción de alta
+              calidad.
+            </p>
+          </div>
+          <div class="ventaja">
+            <img src={seguridad} alt="Ícono de seguridad" />
+            <h2>Pago y Envío Seguros</h2>
+            <p>
+              Garantizamos transacciones seguras y opciones de envío confiables.
+            </p>
+          </div>
+          <div class="ventaja">
+            <img src={trabajo} alt="Ícono de oportunidades laborales" />
+            <h2>Oportunidades Laborales</h2>
+            <p>
+              Encuentra emocionantes oportunidades de trabajo en el sector de la
+              construcción.
+            </p>
+          </div>
+        </section>
+      </div>
     </body>
   );
 };

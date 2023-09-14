@@ -44,38 +44,6 @@ header p {
   background: linear-gradient(to bottom, #eb3349, #f45c43);
 }
 
-/* Estilos de las secciones */
-#ventajas {
-  background-color: #fff;
-  padding: 50px 0;
-  text-align: center;
-}
-
-.ventaja {
-  display: inline-block;
-  margin: 20px;
-  padding: 20px;
-  width: 30%;
-  background-color: #f9f9f9;
-  border-radius: 5px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-}
-
-.ventaja h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.ventaja p {
-  font-size: 16px;
-}
-
-.ventaja img {
-  width: 60px;
-  height: 60px;
-  margin-top: 20px;
-}
-
 /* Otros estilos (añade más según tus necesidades) */
 /* Estilos del slider */
 div#slider {
@@ -164,4 +132,56 @@ div.slide .image {
   flex: 1;
   padding: 20px;
   text-align: center;
+}
+
+/* Estilos de las secciones */
+
+.ventajas-general h1 {
+  color: #eb3349; /* Color rojo */
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); /* Efecto de sombra */
+  text-align: center;
+  font-size: 36px;
+}
+
+.ventajas-general h3 {
+  color: #f45c43; /* Color naranja */
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); /* Efecto de sombra */
+  text-align: center;
+  font-size: 18px;
+}
+
+#ventajas {
+  background-color: #fff;
+  padding: 0px 0;
+  text-align: center;
+  display: flex;
+}
+
+.ventaja {
+  display: inline-block;
+  margin: 50px;
+  padding: 20px;
+  width: 30%;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #eb3349, #f45c43);
+}
+
+.ventaja h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.ventaja p {
+  font-size: 16px;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.ventaja img {
+  width: 70%;
+    height: 70%;
 }
