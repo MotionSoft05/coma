@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
     <div class="header-fixed">
-      <img src={conectando} alt="Texto Alternativo" class="logo" />
+      <img src={conectando} class="logo" />
       <div class="header-links">
         <Link to="/contacto">
           <a>Contacto</a>

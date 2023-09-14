@@ -18,6 +18,9 @@ header {
   color: #fff;
   text-align: center;
   padding: 100px 0;
+  @media screen and (max-width: 768px) {
+    padding: 0rem;
+  }
 }
 
 header h1 {
@@ -85,6 +88,9 @@ div#slider header {
   color: #fff;
   padding: 100px 0;
   margin-left: 80px;
+  @media screen and (max-width: 768px) {
+    padding: 0rem;
+  }
 }
 
 div#slider h1 {
@@ -92,12 +98,18 @@ div#slider h1 {
   margin-bottom: 20px;
   text-align: left;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
 }
 
 div#slider p {
   font-size: 18px;
   text-align: left;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  @media screen and (max-width: 768px) {
+    font-size: 0.7rem;
+  }
 }
 
 div#slider .btn-primario {
@@ -126,12 +138,20 @@ div.slide .content {
 div.slide .text {
   flex: 1;
   padding: 20px;
+  @media screen and (max-width: 768px) {
+    padding: 0rem;
+  }
 }
 
 div.slide .image {
   flex: 1;
   padding: 20px;
   text-align: center;
+  @media screen and (max-width: 768px) {
+    padding: 0rem;
+    width: 200px; /* Establecer el ancho deseado */
+    height: auto; /* Mantener la proporción de aspecto original */
+  }
 }
 
 /* Estilos de las secciones */
@@ -145,6 +165,9 @@ div.slide .image {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); /* Efecto de sombra */
   text-align: center;
   font-size: 36px;
+  @media screen and (max-width: 768px) {
+    font-size: 1.2rem;
+  }
 }
 
 .ventajas-general h3 {
@@ -152,6 +175,9 @@ div.slide .image {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); /* Efecto de sombra */
   text-align: center;
   font-size: 18px;
+  @media screen and (max-width: 768px) {
+    font-size: 0.7rem;
+  }
 }
 
 #ventajas {
@@ -170,6 +196,10 @@ div.slide .image {
   border-radius: 5px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
   background: linear-gradient(to bottom, #eb3349, #f45c43);
+  @media screen and (max-width: 768px) {
+    margin: 0.5rem;
+    padding: 0.2rem;
+  }
 }
 
 .ventaja h2 {
@@ -177,12 +207,18 @@ div.slide .image {
   margin-bottom: 10px;
   color: #fff;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
 }
 
 .ventaja p {
   font-size: 16px;
   color: #fff;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  @media screen and (max-width: 768px) {
+    font-size: 0.5rem;
+  }
 }
 
 .ventaja img {
@@ -203,6 +239,9 @@ div.slide .image {
   background-position: center;
   color: #fff; /* Cambia el color del texto para que sea legible en el fondo */
   background-position: center calc(100% - -1000px);
+  @media screen and (max-width: 768px) {
+    background-position: center calc(100% - -0px);
+  }
 }
 
 /* Estilos para la parte izquierda */
@@ -216,6 +255,9 @@ div.slide .image {
   font-size: 36px;
   color: #fff;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
 }
 
 /* Estilos para el subtítulo en la parte izquierda */
@@ -223,6 +265,9 @@ div.slide .image {
   font-size: 18px;
   color: #fff;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  @media screen and (max-width: 768px) {
+    font-size: 0.7rem;
+  }
 }
 
 /* Estilos para la parte derecha (formulario de suscripción) */

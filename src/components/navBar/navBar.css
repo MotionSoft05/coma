@@ -6,10 +6,6 @@ body {
 }
 
 .header-fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
   background-color: white;
   color: black;
   display: flex;
@@ -18,10 +14,15 @@ body {
   padding: 10px 20px;
   z-index: 100;
 }
-
-.header-links {
-  flex-grow: 1;
-  text-align: center;
+.header-fixed img {
+  /* Estilos predeterminados para la imagen */
+  width: 200px; /* Establecer el ancho deseado */
+  height: auto; /* Mantener la proporción de aspecto original */
+  /* Pantalla pequeña (hasta 768px) */
+  @media screen and (max-width: 768px) {
+    width: 50px; /* Establecer el ancho deseado */
+    height: auto; /* Mantener la proporción de aspecto original */
+  }
 }
 
 .header-links a {
@@ -31,6 +32,9 @@ body {
   font-weight: 550;
   font-size: 16px;
   margin: 0 20px;
+  @media screen and (max-width: 768px) {
+    font-size: 0.5rem;
+  }
 }
 
 .login-links {
@@ -46,6 +50,12 @@ body {
   border-radius: 5px;
   font-weight: bold;
   margin-right: 30px;
+
+  @media screen and (max-width: 768px) {
+    padding: 0.1rem 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 0.1rem;
+  }
 }
 
 .login-link:hover {
@@ -57,9 +67,4 @@ body {
 /* Aplicar color al hacer hover en los enlaces */
 .header-links a:hover {
   color: #f45c43;
-}
-
-.logo {
-  width: 200px;
-  height: 50px;
 }
