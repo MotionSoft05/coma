@@ -43,7 +43,6 @@ body {
 .contact-submit {
   background-color: #eb3349;
   color: #fff;
-  border: none;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
@@ -51,4 +50,8 @@ body {
 
 .contact-submit:hover {
   background-color: #f45c43;
+}
+
+.contacto-container {
+  margin-top: 7%; /* Puedes ajustar este valor según la cantidad de espacio que necesites */
 }
