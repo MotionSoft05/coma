@@ -29,10 +29,10 @@ const Footer = () => {
       <div class="footer-left">
         <p class="footer-links">
           <a class="link-1" href="#">
-            Servicios
+            Eventos
           </a>
 
-          <a href="#">Eventos</a>
+          <a href="#">Servicios</a>
 
           <a href="#">Contactos</a>
         </p>
