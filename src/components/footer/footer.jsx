@@ -36,7 +36,6 @@ const Footer = () => {
 
           <a href="#">Contactos</a>
         </p>
-        <p>coMA &copy; 2015</p>
       </div>
     </footer>
   );
