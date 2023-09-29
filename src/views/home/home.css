@@ -255,12 +255,8 @@ div.slide .image img {
   background-size: cover;
   background-attachment: fixed; /* Fija la imagen de fondo */
   background-repeat: no-repeat;
-  background-position: center;
   color: #fff; /* Cambia el color del texto para que sea legible en el fondo */
-  background-position: center calc(100% - -400px);
-  @media screen and (max-width: 768px) {
-    background-position: center calc(100% - -0px);
-  }
+  background-position: calc(100% - 00px);
 }
 
 /* Estilos para la parte izquierda */

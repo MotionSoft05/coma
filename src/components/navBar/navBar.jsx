@@ -3,20 +3,20 @@ import conectando from "../../media/conectando.png";
 import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
-    <div class="header-fixed">
-      <img src={conectando} class="logo" />
-      <div class="header-links">
+    <div className="header-fixed">
+      <img src={conectando} className="logo" />
+      <div className="header-links">
         <Link to="/contacto">
           <a>Contacto</a>
         </Link>
         <a href="#eventos">Eventos</a>
         <a href="#servicios">Servicios</a>
       </div>
-      <div class="login-links">
-        <a href="#inicio-sesion" class="login-link">
+      <div className="login-links">
+        <a href="#inicio-sesion" className="login-link">
           Iniciar Sesión
         </a>
-        <a href="#registro" class="login-link">
+        <a href="#registro" className="login-link">
           Registrarse
         </a>
       </div>

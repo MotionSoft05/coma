@@ -47,9 +47,9 @@ const Home = () => {
       {/* <!-- Sección de Encabezado --> */}
       <div id="slider">
         {/* <!-- Slider 1 --> */}
-        <div class="slide">
-          <div class="content">
-            <div class="text">
+        <div className="slide">
+          <div className="content">
+            <div className="text">
               <header>
                 <h1>CoMA: Tu Fuente de Materiales de Construcción y Empleo</h1>
                 <p>
@@ -57,54 +57,54 @@ const Home = () => {
                   conveniente. ¡Únete a la revolución en el comercio y la
                   construcción!
                 </p>
-                <a href="#registro" class="btn-primario">
+                <a href="#registro" className="btn-primario">
                   Comienza Ahora
                 </a>
               </header>
             </div>
-            <div class="image">
+            <div className="image">
               {/* <!-- Agrega aquí la imagen correspondiente al Slider 1 --> */}
               <img src={slider1} alt="Slider 1" />
             </div>
           </div>
         </div>
         {/* <!-- Slider 2 --> */}
-        <div class="slide">
-          <div class="content">
-            <div class="text">
+        <div className="slide">
+          <div className="content">
+            <div className="text">
               <header>
                 <h1>Descubre Nuestras Ofertas Especiales</h1>
                 <p>
                   ¡Aprovecha nuestras promociones exclusivas en materiales de
                   construcción de alta calidad!
                 </p>
-                <a href="#registro" class="btn-primario">
+                <a href="#registro" className="btn-primario">
                   Ver Ofertas
                 </a>
               </header>
             </div>
-            <div class="image">
+            <div className="image">
               {/* <!-- Agrega aquí la imagen correspondiente al Slider 1 --> */}
               <img src={slider2} alt="Slider 2" />
             </div>
           </div>
         </div>
         {/* <!-- Slider 3 --> */}
-        <div class="slide">
-          <div class="content">
-            <div class="text">
+        <div className="slide">
+          <div className="content">
+            <div className="text">
               <header>
                 <h1>Regístrate y Encuentra Empleo en la Construcción</h1>
                 <p>
                   Conéctate con empleadores en busca de profesionales de la
                   construcción y encuentra tu próximo trabajo.
                 </p>
-                <a href="#registro" class="btn-primario">
+                <a href="#registro" className="btn-primario">
                   Buscar Empleo
                 </a>
               </header>
             </div>
-            <div class="image">
+            <div className="image">
               {/* <!-- Agrega aquí la imagen correspondiente al Slider 1 --> */}
               <img src={slider3} alt="Slider 3" />
             </div>
@@ -114,7 +114,7 @@ const Home = () => {
 
       {/* <!-- Sección de Cómo Funciona CoMA --> */}
       <section id="como-funciona">
-        <div class="contenido-texto">
+        <div className="contenido-texto">
           <h2>Cómo Funciona CoMA</h2>
           <p>
             CoMA es tu solución integral para el comercio de materiales de
@@ -135,27 +135,27 @@ const Home = () => {
             emocionantes oportunidades laborales en la construcción.
           </p>
           <section id="puntos-fuertes">
-            <div class="punto-fuerte">
+            <div className="punto-fuerte">
               <img src={thunder} alt="Ícono de Rapidez" />
               <h3>Rapidez</h3>
             </div>
-            <div class="punto-fuerte">
+            <div className="punto-fuerte">
               <img src={security} alt="Ícono de Seguridad" />
               <h3>Seguridad</h3>
             </div>
-            <div class="punto-fuerte">
+            <div className="punto-fuerte">
               <img src={toolbox} alt="Ícono de Variedad" />
               <h3>Variedad</h3>
             </div>
           </section>
         </div>
-        <div class="imagen">
+        <div className="imagen">
           <img src={imgennueva} alt="Imagen de cómo funciona CoMA" />
         </div>
       </section>
 
       <section id="suscripcion">
-        <div class="izquierda">
+        <div className="izquierda">
           <h2>Suscríbete a Nuestras Novedades</h2>
           <h3>
             Mantente al tanto de las últimas ofertas, actualizaciones de
@@ -163,11 +163,11 @@ const Home = () => {
             relacionadas con CoMA.
           </h3>
         </div>
-        <div class="derecha">
+        <div className="derecha">
           <form action="procesar-suscripcion.php" method="post">
             <label for="email">Correo Electrónico:</label>
             <input
-              class="emails"
+              className="emails"
               type="email"
               id="email"
               name="email"
@@ -179,14 +179,14 @@ const Home = () => {
         </div>
       </section>
       {/* <!-- Sección de Por qué seleccionar CoMA --> */}
-      <div class="ventajas-general">
+      <div className="ventajas-general">
         <h1>¿Por qué seleccionar CoMA?</h1>
         <h3>Tu destino completo para construcción y oportunidades laborales</h3>
 
         {/* <!-- Sección de Ventajas Principales --> */}
         <section id="ventajas">
           {/* <!-- Beneficios Clave --> */}
-          <div class="ventaja">
+          <div className="ventaja">
             <img src={productos} alt="Ícono de productos" />
             <h2>Variedad de Productos</h2>
             <p>
@@ -194,14 +194,14 @@ const Home = () => {
               calidad.
             </p>
           </div>
-          <div class="ventaja">
+          <div className="ventaja">
             <img src={seguridad} alt="Ícono de seguridad" />
             <h2>Pago y Envío Seguros</h2>
             <p>
               Garantizamos transacciones seguras y opciones de envío confiables.
             </p>
           </div>
-          <div class="ventaja">
+          <div className="ventaja">
             <img src={trabajo} alt="Ícono de oportunidades laborales" />
             <h2>Oportunidades Laborales</h2>
             <p>

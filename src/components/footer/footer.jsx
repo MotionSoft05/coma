@@ -7,7 +7,7 @@ import youtube from "../../media/youtube.svg";
 
 const Footer = () => {
   return (
-    <footer class="footer-distributed">
+    <footer className="footer-distributed">
       <div className="footer-right">
         <a href="#">
           <img src={facebook} />
@@ -26,9 +26,9 @@ const Footer = () => {
         </a>
       </div>
 
-      <div class="footer-left">
-        <p class="footer-links">
-          <a class="link-1" href="#">
+      <div className="footer-left">
+        <p className="footer-links">
+          <a className="link-1" href="#">
             Eventos
           </a>
 
